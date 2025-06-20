@@ -21,7 +21,7 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # load dba object
 
-ss <- dba.load('ATACseq_ShiftExtend_2025_01_21')
+ss <- dba.load('dba_ATACseq_ShiftExtend_2025_01_21', pre = 'input files/')
 
 # Convert DBA object to SummarizedExperiment
 ss_sum <- dba(ss, bSummarizedExperiment = TRUE)
